@@ -1,0 +1,106 @@
+body, html{
+  height:100%;
+  margin:0;
+  font-size:16px;
+  font-family:"Lato", sans-serif;
+  font-weight:400;
+  line-height:1.8em;
+  color:#666;
+}
+
+.pimg{
+  position:relative;
+  opacity:0.70;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+
+  /*
+    fixed = parallax
+    scroll = normal
+  */
+  background-attachment:fixed;
+}
+
+.pimg:nth-of-type(1){
+  background-image:url('https://scontent.xx.fbcdn.net/v/t1.15752-9/p403x403/236614971_399986618215571_6131834770588628802_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=aee45a&_nc_eui2=AeHsuJyxcTnuayACKy09gS7T80XeEMTTrQvzRd4QxNOtC3SOS_AJwmyH9bOGAXw1fYLyWetNx7UkIC15DTDvdnis&_nc_ohc=oBlCd44qOHwAX_glg8Z&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=4a5294584c8d4c3932412c62f2ddd97b&oe=617DDD7B');
+  min-height:100%;
+}
+
+.pimg:nth-of-type(2){
+  background-image:url('https://cdn.shopify.com/s/files/1/1577/8079/articles/7791236688_IMG_1704_1400x.progressive.jpg?v=1534437748');
+  min-height:400px;
+}
+
+.pimg:nth-of-type(3){
+  background-image:url('https://lh3.googleusercontent.com/proxy/C2UXhqEc9m3s3zWWNsTZt8ZBSZYJCyCJQC5PiheeFB0RqDAYyVrjP-oznOsuQ45eP64x9o0ALrtH0BRqdtPmiM39U3HVIM0ii0vac2sA5LK1_ChSMmAwPxRvoOin');
+  min-height:400px;
+}
+.pimg:nth-of-type(4){
+  background-image:url('https://detailingemporium.com/wp-content/uploads/claying.jpg'); 
+  min-height:400px;
+}
+.pimg:nth-of-type(5){
+  background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHhq3LZ0PKoi73v1t2qZeW78lrO_iKDLtUtA&usqp=CAU'); 
+  min-height:400px;
+}
+.pimg:nth-of-type(6){
+  background-image:url('https://nspectacar.com/wp-content/uploads/2020/12/c1.jpg'); /*https://cdn.wd40company.eu/wd-40/africa/uploads/2021/03/09173106/Car-Interior-Cleaning.png*/
+  min-height:400px;
+}
+.pimg:nth-of-type(7){
+  background-image:url('https://i.insider.com/5cdc4227021b4c257251d8a4?width=1200&format=jpeg'); 
+  min-height:400px;
+}
+.pimg:nth-of-type(8){
+  background-image:url('https://cdn.wd40company.eu/wd-40/africa/uploads/2021/03/09173106/Car-Interior-Cleaning.png'); 
+  min-height:400px;
+}
+
+.pimg:nth-of-type(9){
+  background-image:url('https://scontent.xx.fbcdn.net/v/t1.15752-9/p403x403/236614971_399986618215571_6131834770588628802_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=aee45a&_nc_eui2=AeHsuJyxcTnuayACKy09gS7T80XeEMTTrQvzRd4QxNOtC3SOS_AJwmyH9bOGAXw1fYLyWetNx7UkIC15DTDvdnis&_nc_ohc=oBlCd44qOHwAX_glg8Z&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=4a5294584c8d4c3932412c62f2ddd97b&oe=617DDD7B');
+  min-height:100%;
+}
+
+.section{
+  text-align:center;
+  padding:50px 80px;
+  height: 200px;
+}
+
+.section-light{
+  background-color:#f4f4f4;
+  color:#666;
+}
+
+.section-dark{
+  background-color:#282e34;
+  color:#ddd;
+}
+
+.ptext{
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:27px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+
+.ptext .border{
+  background-color:#111;
+  color:#fff;
+  padding:20px;
+}
+
+.ptext .border.trans{
+  background-color:transparent;
+}
+
+@media(max-width:568px){
+  .pimg1, .pimg2, .pimg3{
+    background-attachment:scroll;
+  }
+}
